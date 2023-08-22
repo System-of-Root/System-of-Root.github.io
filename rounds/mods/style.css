@@ -1,7 +1,12 @@
 body {
 	background-color: #131315;
+	font-family: Arial, Helvetica, sans-serif; 
 }
 
 * {
 	color: #dddddd;
+}
+
+img {
+	background-color: gray;
 }
