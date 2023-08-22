@@ -10,3 +10,21 @@ body {
 img {
 	background-color: gray;
 }
+th{
+	
+	border-top: 2px solid;
+}
+td, th{
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-color: saddlebrown;
+	padding: 0rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+table{
+	border-spacing: 0;
+}
+td:has(p){
+	border-bottom: 2px solid saddlebrown;
+}
