@@ -23,11 +23,13 @@ var overviewerConfig = {
         "LOWERRIGHT": 2
     },
     "worlds": [
-        "world"
+        "world - overworld",
+        "world - nether",
+        "world - end"
     ],
     "map": {
         "debug": false,
-        "cacheTag": "1699154972",
+        "cacheTag": "1699201540",
         "north_direction": "lower-left",
         "controls": {
             "pan": true,
@@ -41,14 +43,14 @@ var overviewerConfig = {
     },
     "tilesets": [
         {
-            "name": "Overviewer Render (lighting)",
+            "name": "Upper Left",
             "zoomLevels": 9,
             "defaultZoom": 1,
             "maxZoom": 9,
-            "path": "world-lighting",
+            "path": "overworld_smooth_upper-left",
             "base": "",
             "bgcolor": "#1a1a1a",
-            "world": "world",
+            "world": "world - overworld",
             "last_rendertime": 1699133294,
             "imgextension": "png",
             "isOverlay": false,
@@ -67,6 +69,394 @@ var overviewerConfig = {
                 0
             ],
             "north_direction": 0
+        },
+        {
+            "name": "Upper Right",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "overworld_smooth_upper-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 1
+        },
+        {
+            "name": "Lower Right",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "overworld_smooth_lower-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 2
+        },
+        {
+            "name": "Lower Left",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "overworld_smooth_lower-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 3
+        },
+        {
+            "name": "Upper Left (Caves)",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "cave_smooth_upper-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 0
+        },
+        {
+            "name": "Upper Right (Caves)",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "cave_smooth_upper-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 1
+        },
+        {
+            "name": "Lower Right (Caves)",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "cave_smooth_lower-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 2
+        },
+        {
+            "name": "Lower Left (Caves)",
+            "zoomLevels": 9,
+            "defaultZoom": 1,
+            "maxZoom": 9,
+            "path": "cave_smooth_lower-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - overworld",
+            "last_rendertime": 1699133294,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": [
+                49,
+                65,
+                0
+            ],
+            "north_direction": 3
+        },
+        {
+            "name": "Upper Left",
+            "zoomLevels": 5,
+            "defaultZoom": 1,
+            "maxZoom": 5,
+            "path": "nether_smooth_upper-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - nether",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 0
+        },
+        {
+            "name": "Upper Right",
+            "zoomLevels": 6,
+            "defaultZoom": 1,
+            "maxZoom": 6,
+            "path": "nether_smooth_upper-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - nether",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 1
+        },
+        {
+            "name": "Lower Right",
+            "zoomLevels": 6,
+            "defaultZoom": 1,
+            "maxZoom": 6,
+            "path": "nether_smooth_lower-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - nether",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 2
+        },
+        {
+            "name": "Lower Left",
+            "zoomLevels": 6,
+            "defaultZoom": 1,
+            "maxZoom": 6,
+            "path": "nether_smooth_lower-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - nether",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 3
+        },
+        {
+            "name": "Upper Left",
+            "zoomLevels": 5,
+            "defaultZoom": 1,
+            "maxZoom": 5,
+            "path": "end_smooth_upper-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - end",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 0
+        },
+        {
+            "name": "Upper Right",
+            "zoomLevels": 5,
+            "defaultZoom": 1,
+            "maxZoom": 5,
+            "path": "end_smooth_upper-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - end",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 1
+        },
+        {
+            "name": "Lower Right",
+            "zoomLevels": 5,
+            "defaultZoom": 1,
+            "maxZoom": 5,
+            "path": "end_smooth_lower-right",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - end",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 2
+        },
+        {
+            "name": "Lower Left",
+            "zoomLevels": 5,
+            "defaultZoom": 1,
+            "maxZoom": 5,
+            "path": "end_smooth_lower-left",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - end",
+            "last_rendertime": 1699130624,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                49,
+                65,
+                0
+            ],
+            "lastrenderversion": 2,
+            "minZoom": 0,
+            "spawn": false,
+            "north_direction": 3
         }
     ]
 };
